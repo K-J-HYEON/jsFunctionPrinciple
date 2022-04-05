@@ -7,7 +7,7 @@ function a() {
      if (x) {
          let a = 3;
          for (let i = 0; i < a; i++) {
-             console.log(i);
+             console.log(i, a);
          }
          if (!y) {
              kkk();
