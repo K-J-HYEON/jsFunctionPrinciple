@@ -1,24 +1,21 @@
-const x = true;
-const y = false;
+const x = 'x';
+
+function c() {
+    const y = 'y';
+    console.log('c');
+}
 
 function a() {
-     let a = 4;
-     y = true;
-     if (x) {
-         let a = 3;
-         for (let i = 0; i < a; i++) {
-             console.log(i, a);
-         }
-         if (!y) {
-             kkk();
-         }
-     }
-     // z(); // 에러
+    const x = 'x';
+    consolelog('a');
+    function b() {
+        const z = 'z';
+        console.log('b');
+        c();
+    }
+
+    b();
 }
 
 a();
-const z = (a, b) => {
-    return a + b;
-} // TDZ
-
-z(3, 5); //8
+c();
